@@ -51,6 +51,7 @@
         ],
         "githubPages": false,
         "name": "Physics Components",
+        "favicon": "favicon.ico",
         "out": "docs",
         "readme": "none"
     },
