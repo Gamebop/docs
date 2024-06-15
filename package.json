@@ -1,0 +1,34 @@
+{
+    "name": "@gamebop/docs",
+    "version": "1.0.0",
+    "author": "Gamebop",
+    "homepage": "https://gamebop.github.io/physics",
+    "description": "Gamebop Physics Components API reference manual",
+    "keywords": [
+      "gamebop",
+      "physics",
+      "api",
+      "reference",
+      "documentation",
+      "typedoc"
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/Gamebop/docs/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Gamebop/docs.git"
+    },
+    "devDependencies": {
+      "typedoc": "^0.25.13",
+      "typedoc-plugin-extras": "^3.0.0",
+      "typedoc-plugin-mdn-links": "^3.1.29",
+      "typedoc-plugin-missing-exports": "^2.3.0",
+      "typedoc-plugin-rename-defaults": "^0.7.0"
+    },
+    "scripts": {
+      "build": "typedoc",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+  }
