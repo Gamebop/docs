@@ -18,9 +18,6 @@
         "typedoc-plugin-missing-exports"
     ],
     "readme": "INDEX.md",
-    "searchGroupBoosts": {
-        "Classes": 2
-    },
     "sitemapBaseUrl": "https://gamebop.github.io/physics/",
     "sortEntryPoints": false,
 
