@@ -1,19 +1,58 @@
 {
     "compilerOptions": {
-        "noImplicitAny": true,
+        "baseUrl": ".",
+        "outDir": "types",
         "allowJs": true,
+        "checkJs": false,
+        "module": "es6",
         "target": "es6",
-        "jsx": "react",
-        "lib": [
-            "es2019",
-            "dom",
-            "dom.iterable"
-        ],
-        "esModuleInterop" : true,
-        "sourceMap": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "typeRoots": [ "./node_modules/@types" ]
     },
-    "include": [
-        "submodules/physics/src/**/*.mjs"
-    ]
+    "typedocOptions": {
+        "compilerOptions": {
+            "allowSyntheticDefaultImports": true,
+            "checkJs": false,
+            "typeRoots": [ "./node_modules/@types" ]
+        },
+        "entryPoints": [
+            "submodules/physics/src/index.mjs",
+        ],
+        "navigation": {
+            "includeCategories": true,
+            "includeGroups": true
+        },
+        "categorizeByGroup": true,
+        "excludeNotDocumented": true,
+        "excludeNotDocumentedKinds": [
+            "Module",
+            "Namespace",
+            "Enum",
+            "Variable",
+            "Function",
+            "Class",
+            // "Interface",
+            "Constructor",
+            "Property",
+            "Method",
+            "CallSignature",
+            "IndexSignature",
+            "ConstructorSignature",
+            "Accessor",
+            // "GetSignature",
+            "SetSignature",
+            "TypeAlias",
+            "Reference"
+        ],
+        "githubPages": false,
+        "name": "Physics Components",
+        "out": "docs",
+        "readme": "none"
+    },
+    "include": [ "submodules/physics/src/**/*.mjs" ]
 }
