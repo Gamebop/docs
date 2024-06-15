@@ -23,6 +23,9 @@
         "entryPoints": [
             "submodules/physics/src/index.mjs",
         ],
+        "plugin": [
+            "typedoc-plugin-extras"
+        ],
         "navigation": {
             "includeCategories": true,
             "includeGroups": true
