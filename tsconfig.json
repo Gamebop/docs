@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "allowJs": true,
+        "target": "es6",
+        "jsx": "react",
+        "lib": [
+            "es2019",
+            "dom",
+            "dom.iterable"
+        ],
+        "esModuleInterop" : true,
+        "sourceMap": true,
+        "moduleResolution": "node"
+    },
+    "include": [
+        "submodules/physics/src/**/*.mjs"
+    ]
+}
