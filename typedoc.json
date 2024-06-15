@@ -1,0 +1,34 @@
+{
+    "entryPoints": [
+        "submodules/physics/src/index.mjs"
+    ],
+    "excludeNotDocumented": true,
+    "exclude": [
+        "**/node_modules/**"
+    ],
+    "githubPages": true,
+    "name": "Gamebop Physics Components API Reference",
+    "navigationLinks": {
+        "GitHub": "https://github.com/Gamebop/physics"
+    },
+    "plugin": [
+        "typedoc-plugin-extras",
+        "typedoc-plugin-mdn-links",
+        "typedoc-plugin-rename-defaults",
+        "typedoc-plugin-missing-exports"
+    ],
+    "readme": "INDEX.md",
+    "searchGroupBoosts": {
+        "Classes": 2
+    },
+    "sitemapBaseUrl": "https://gamebop.github.io/physics/",
+    "sortEntryPoints": false,
+
+    // Options for typedoc-plugin-extras
+    "customDescription": "Gamebop Physics Components API reference",
+    "favicon": "favicon.ico",
+    "footerLastModified": false, // enabling this activates the page's scroll bar
+    "footerTypedocVersion": true,
+    // Options for typedoc-plugin-missing-exports
+    "placeInternalsInOwningModule": true
+}
