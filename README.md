@@ -1,2 +1,5 @@
 # docs
-Documentation
+Update
+```
+git submodule update --remote
+```
