@@ -58,5 +58,5 @@
         "out": "docs",
         "readme": "none"
     },
-    "include": [ "submodules/physics/src/**/*.mjs" ]
+    "include": [ "submodules/physics/**/*.mjs" ]
 }
