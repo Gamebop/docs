@@ -1,62 +1,34 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
-        "outDir": "types",
         "allowJs": true,
         "checkJs": false,
-        "module": "es6",
+        "lib": [
+            "es2019",
+            "dom",
+            "dom.iterable"
+        ],
         "target": "es6",
         "moduleResolution": "node",
         "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "strictNullChecks": true,
-        "strictPropertyInitialization": true,
-        "typeRoots": [ "./node_modules/@types" ]
+        "noImplicitAny": true
     },
+    "include": [ "submodules/physics/src/**/*.mjs" ],
     "typedocOptions": {
-        "compilerOptions": {
-            "allowSyntheticDefaultImports": true,
-            "checkJs": false,
-            "typeRoots": [ "./node_modules/@types" ]
-        },
         "entryPoints": [
-            "submodules/physics/src/index.mjs",
+            "submodules/physics/src/index.mjs"
         ],
-        "plugin": [
-            "typedoc-plugin-extras"
+        "exclude": [
+            "**/node_modules/**"
         ],
+        "hostedBaseUrl": "https://gamebop.github.io/docs/",
         "navigation": {
             "includeCategories": true,
             "includeGroups": true
         },
         "categorizeByGroup": true,
         "excludeNotDocumented": true,
-        "excludeNotDocumentedKinds": [
-            "Module",
-            "Namespace",
-            "Enum",
-            "Variable",
-            "Function",
-            "Class",
-            // "Interface",
-            "Constructor",
-            "Property",
-            "Method",
-            "CallSignature",
-            "IndexSignature",
-            "ConstructorSignature",
-            "Accessor",
-            // "GetSignature",
-            "SetSignature",
-            "TypeAlias",
-            "Reference"
-        ],
-        "githubPages": false,
         "name": "Physics Components",
-        "favicon": "favicon.ico",
         "out": "docs",
         "readme": "none"
-    },
-    "include": [ "submodules/physics/**/*.mjs" ]
+    }
 }
