@@ -21,8 +21,7 @@
         "url": "https://github.com/Gamebop/docs.git"
     },
     "devDependencies": {
-        "typedoc": "^0.26.1",
-        "typedoc-plugin-extras": "^3.1.0"
+        "typedoc": "^0.27.5"
     },
     "scripts": {
         "build": "typedoc",
